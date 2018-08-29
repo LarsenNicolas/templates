@@ -1,0 +1,19 @@
+<div class="window-form">
+  <h2>Visualizacion de mi base de datos</h2>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Usuario</th>
+        <th>Telefono</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let us of usus">
+        <td>{{us.name}}</td>
+        <td>{{us.psw}}</td>
+        <td>{{us.telefono}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

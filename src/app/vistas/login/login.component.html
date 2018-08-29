@@ -1,0 +1,48 @@
+<form class="window-form" *ngIf="flag" name="logForm" [formGroup]="logForm">
+  <h2>Iniciar sesión</h2>
+    <div class="form-group">
+      <label for="email">Usuario:</label>
+      <input type="text" class="form-control" id="usuario" formControlName='usuario'>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Contraseña:</label>
+      <input type="password" class="form-control" id="pwd" formControlName='psw'>
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Remember me
+      </label>
+    </div>
+    <button type="submit" (click)="datosLogin()" class="btn btn-primary btn-block" [disabled]="!logForm.valid">Entrar</button>
+    
+    <button class="btn btn-link" (click)="newUsuario()">Crear usuario</button>
+</form>
+
+<form class="window-form" *ngIf="!flag" >
+    <h2>Crear usuario</h2>
+    <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="email">Usuario:</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Contraseña:</label>
+        <input type="password" class="form-control" id="pwd">
+      </div>
+      <div class="form-group">
+          <label for="pwd">Confirmar contraseña:</label>
+          <input type="password" class="form-control" id="pwd">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Telefono:</label>
+        <input type="telefono" class="form-control" id="telefono">
+    </div>
+      <button type="submit" class="btn btn-primary btn-block" >Crear usuario</button>
+     
+  </form>
+
+
+  <p>Form Status: {{ logForm.status }}</p>
