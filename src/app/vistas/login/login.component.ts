@@ -1,3 +1,4 @@
+import { UsuariosService } from './../../service/usuarios.service';
 import { Component, OnInit } from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
@@ -12,10 +13,11 @@ export class LoginComponent implements OnInit{
   
   flag: boolean = true;
   
-  constructor(private fb : FormBuilder) {}
+  constructor(private fb : FormBuilder, 
+              private usuarioService : UsuariosService) {}
   
   ngOnInit(){
-  
+    
   }
 
   logForm = this.fb.group({

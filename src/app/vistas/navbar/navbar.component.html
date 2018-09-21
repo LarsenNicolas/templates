@@ -1,15 +1,59 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="">Home</a>
+    <a class="navbar-brand" (click)="redireccionar('vistas/miBase')" >Home</a>
       
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
        <div class="navbar-nav">
-        <a class="nav-item nav-link" href="#">Features</a>
-        <a class="nav-item nav-link" (click)="redireccionar('vistas/login')">Login</a>
+        <!-- Con href no refresca pero no se ve la manito para seleccionar el link -->
+        <a class="nav-item nav-link" (click)="redireccionar('vistas/login')">Iniciar sesión</a>
+        <a class="nav-item nav-link" (click)="redireccionar('vistas/miBase')">Mis usuarios</a>
+        <a class="nav-item nav-link" (click)="redireccionar('vistas/galeria')">Galeria</a>
+        <a class="nav-item nav-link" href="http://www.gmail.com" target="_blank">Gmail</a>
+        <a class="nav-item nav-link" href="http://www.ambito.com/" target="_blank">Ambito</a>
+        <a class="nav-item nav-link" href="http://www.starcitygames.com/" target="_blank">Starcitygames</a>
+        <a class="nav-item nav-link" href="https://bancainternet.bancocredicoop.coop/bcclbi/" target="_blank">Credicoop</a>
         <a class="nav-item nav-link disabled" href="#">Disabled</a>       
-       </div>     
-      </div>    
+       </div> 
+    </div>    
 </nav>
+
+
+<!-- 
+NO ME SALIO CON EL BOTON DEL LOGIN
+<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+                <div class="navbar-header">
+                        <a class="navbar-brand" (click)="redireccionar('vistas/miBase')" >Home</a>
+                </div>
+        <ul class="nav navbar-nav">
+            <!-- Con href no refresca pero no se ve la manito para seleccionar el link -->
+            <!-- <a  (click)="redireccionar('vistas/login')">Iniciar sesión</a> -->
+            <!-- <a  (click)="redireccionar('vistas/miBase')">Mis usuarios</a>
+            <a  (click)="redireccionar('vistas/galeria')">Galeria</a>
+            <a  href="http://www.gmail.com" target="_blank">Gmail</a>
+            <a  href="http://www.ambito.com/" target="_blank">Ambito</a>
+            <a  href="http://www.starcitygames.com/" target="_blank">Starcitygames</a>
+            <a  href="https://www.bancocredicoop.coop/personas" target="_blank">Credicoop</a>
+            <a  href="#">Disabled</a>       
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a (click)="redireccionar('vistas/login')"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+            
+        
+        </div>
+    
+    </nav> -->
+    
+
+
+
+
+
+
+
+
 
 
 

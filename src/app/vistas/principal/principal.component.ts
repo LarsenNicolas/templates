@@ -1,5 +1,5 @@
 import { routes } from './../../app.routing';
-import { ArrayVistas } from './../../model/vistas';
+import { ArrayVistas } from './../../model/ArraysEmulados/vistas';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 

@@ -10,10 +10,16 @@
     </thead>
     <tbody>
       <tr *ngFor="let us of usus">
+         <!-- [class.selected]="us === selectedUsu" (click)="onSelected(us)" -->
         <td>{{us.name}}</td>
         <td>{{us.psw}}</td>
         <td>{{us.telefono}}</td>
       </tr>
     </tbody>
   </table>
+
+  <!-- <div >
+    <input [(ngModel)]="selectedUsu.name">
+
+  </div> -->
 </div>

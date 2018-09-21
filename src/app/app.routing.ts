@@ -8,7 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 export const routes: Routes = [
-    { path: '',   redirectTo: 'vistas/login', pathMatch: 'full' },
+    { path: '',   redirectTo: 'vistas/miBase', pathMatch: 'full' },
     { path: 'vistas/login', component: LoginComponent},
     { path: 'principal', component: PrincipalComponent },
     { path: 'vistas/galeria', component: GaleriaComponent},
