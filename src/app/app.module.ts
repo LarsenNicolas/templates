@@ -15,16 +15,21 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { VisualizacionBaseDatosComponent } from './vistas/visualizacion-base-datos/visualizacion-base-datos.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
+import { AbmGastosComponent } from './vistas/abm-gastos/abm-gastos.component';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 
 @NgModule({
   declarations: [
+    BrowserAnimationsModule,
     AppComponent,
     PrincipalComponent,
     LoginComponent,
     NavbarComponent,
     NavmacComponent,
     GaleriaComponent,
-    VisualizacionBaseDatosComponent
+    VisualizacionBaseDatosComponent,
+    AbmGastosComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +37,10 @@ import { InMemoryDataService }  from './in-memory-data.service';
     NgbModule,
     FormsModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
+    NoopAnimationsModule,
+    MatButtonModule, 
+    MatCheckboxModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }

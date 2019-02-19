@@ -1,3 +1,10 @@
+<ng-template>
+  <button class="tab-button" 
+          (click)="login()">{{loginText}}</button>
+  <button class="tab-button" 
+          (click)="signUp()">{{signUpText}}</button>
+</ng-template>
+
 <form class="window-form" *ngIf="flag" name="logForm" [formGroup]="logForm">
   <h2>Iniciar sesión</h2>
     <div class="form-group">
@@ -43,6 +50,5 @@
       <button type="submit" class="btn btn-primary btn-block" >Crear usuario</button>
      
   </form>
-
 
   <p>Form Status: {{ logForm.status }}</p>
